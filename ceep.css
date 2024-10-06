@@ -1,0 +1,333 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    background-color: #f41e1e;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+        width: 80px; /* Ajuste a largura */
+        height: 80px; /* Ajuste a altura */
+        background-image: url(dceep.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 15;
+ } 
+nav .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+nav li{
+    margin-left: 7px;
+}
+nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav li a:hover{
+    background-color: white;
+    color: black;
+}
+.banner{
+    height: 100vh;
+    background: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.texto .titulo{
+    color: #f41e1e;
+    font-size: 60px;
+    font-weight: 600;
+}
+.texto .sub_titulo{
+    color: #000;
+    font-size: 58px;
+    font-weight: 600;
+}
+.texto .botoes{
+    margin-top: 30px;
+}
+.texto .botoes button{
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+.texto .botoes button.n-overlay{
+    color: #f41e1e;
+    background: none;
+    border: 2px solid white;
+}
+.texto .botoes button.n-overlay:hover{
+    color: black;
+    background-color: white;
+}
+.texto .botoes button.overlay{
+    background: white;
+    color: black;
+    animation: vibrar 0.5s ease-in-out infinite both;
+}
+@keyframes vibrar {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+footer {
+    border: 1px solid #f41e1e;
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: -40px; /* Footer inicialmente escondido */
+    transition: bottom 1.0s; /* Efeito de transição */
+    
+  }
+  
+  footer:hover {
+    bottom: 0; /* Footer aparece quando passa o mouse em cima */
+  }
+  
+#brasao {
+        position: absolute;
+        left: 20px;
+        bottom: 0px;
+        width: 60px; /* Ajuste a largura */
+        height: 60px; /* Ajuste a altura */
+        background-image: url(1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 15;
+}
+
+/* Reset básico */
+body, h1, h2, p, ul, li, a, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Corpo e layout */
+  body {
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Cor de fundo suave */
+    color: #333;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background: #b81f1f; /* Verde escuro */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  header nav .menu {
+    list-style: none;
+  }
+  
+  header nav .menu li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  header nav .menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+  }
+  
+  header nav .menu li a:hover {
+    background-color: #b33c3c; /* Cor de fundo ao passar o mouse */
+    transition: 0.3s;
+  }
+  
+  .header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .header-content p {
+    font-size: 18px;
+  }
+  
+  .main-title {
+    text-align: center;
+    padding: 20px;
+    background: #af4c4c; /* Verde médio */
+    color: white;
+  }
+  
+  /* Seções principais */
+  .scroll-section {
+    padding: 40px 20px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .scroll-section:nth-child(even) {
+    background: #f9f9f9; /* Alternância de fundo */
+  }
+  
+  .scroll-section .content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .scroll-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #8b2e2e;
+  }
+  
+  .scroll-section p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .scroll-section ul {
+    list-style-type: square;
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  
+  .scroll-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header nav .menu li {
+      display: block;
+      margin: 5px 0;
+    }
+  
+    .header-content h1 {
+      font-size: 28px;
+    }
+  
+    .scroll-section h2 {
+      font-size: 24px;
+    }
+  
+    .scroll-section p, .scroll-section ul {
+      font-size: 14px;
+    }
+  }
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre as imagens */
+    margin-top: 30px; /* Espaçamento acima da galeria */
+  }
+  #cursos {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden; /* Evita que conteúdo extrapole o card */
+}
+
+.card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+    width: 400px; /* Ajuste conforme necessário */
+    max-height: 150px; /* Limite máximo para a altura */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: auto; /* Permite rolagem se o conteúdo exceder a altura */
+}
+
+.card:hover {
+    width: 700px; /* Largura total do card ao passar o mouse */
+}
+
+.card:hover .card-content {
+    opacity: 1;
+    visibility: visible; /* Torna visível ao passar o mouse */
+}
